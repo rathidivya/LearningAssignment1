@@ -1,0 +1,22 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="${component.title}"></div>
+<div class="col-md-6 col-sm-6 col-xs-12" data-sly-use.multiItems="aem.community.mf.core.models.Multifield">
+	<sly data-sly-list.faq ="${multiItems.products.listChildren}">
+          <div class="tab-menu">
+             <ul class="nav nav-tabs" role="tablist">
+              	<li class="active">
+                	<a href="#p-view-1" role="tab" data-toggle="tab">${faq.question}</a>
+              	</li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active" id="p-view-1">
+              <div class="tab-inner">
+                <div class="event-content head-team">
+                  <h4>${faq.question}</h4>
+				 <p> ${faq.answer}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </sly>
+        </div>

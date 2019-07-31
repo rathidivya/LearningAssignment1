@@ -1,0 +1,45 @@
+<div id="blog" class="blog-area">
+    <div class="blog-inner area-padding">
+		<div class="blog-overly"></div>
+			<div class="container ">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="section-headline text-center">
+							<h2>${properties.heading}</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row" data-sly-use.multiItems="aem.community.mf.core.models.Multifield">
+				<sly data-sly-list.blogs="${multiItems.products.listChildren}">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+    					<div class="single-blog">
+        					<div class="single-blog-img">
+            					<a href="">
+									<img src="${blogs.image}" alt="Loading">
+								</a>
+        					</div>
+							<div class="blog-meta">
+								<span class="comments-type">
+									<i class="fa fa-comment-o"></i>
+										<a href="#">${blogs.comment}</a>
+								</span>
+								<span class="date-type">
+									<i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
+								</span>
+							</div>
+							<div class="blog-text">
+								<h4>
+									<a href="blog.html">${blogs.title}</a>
+								</h4>
+								<p>${blogs.description}</p>
+							</div>
+							<span>
+								<a href="blog.html" class="ready-btn">${blogs.ctaTitle}</a>
+							</span>
+						</div>
+					</div>
+				</sly>
+				</div>
+			</div>
+	</div>
+</div>

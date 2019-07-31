@@ -1,0 +1,15 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+<h4>Hero Banner</h4>
+</sly>
+
+ <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides">
+      	<sly data-sly-use.multiItems="aem.community.mf.core.models.Multifield">
+			<sly data-sly-list.hello="${multiItems.products.listChildren}">
+        		<img src=${hello.pathbr} alt="" title="#slider-direction-1"/>
+             </sly>
+          </sly>
+      </div>
+    </div>
+   </div>

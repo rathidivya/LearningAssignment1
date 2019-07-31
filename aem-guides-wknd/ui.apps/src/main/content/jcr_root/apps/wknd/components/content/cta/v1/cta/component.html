@@ -1,0 +1,20 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="${component.title}"></div>
+
+<sly data-sly-test="${properties.ctaType == 'image'}">
+	<sly data-sly-use.pathURLImage="${'/apps/chipotle/components/content/extension-handler/extension-handler.js' @path=properties.ctaURLImage}">
+		<a href="${pathURLImage.convertedPath}"  target="${properties.ctaTargetImage ? '_blank': '_self'}">
+			<sly data-sly-test="${properties.ctaImage}">
+				<img src="${properties.ctaImage}" alt="${properties.altText}"/>
+            </sly>
+        </a>
+	</sly>		
+</sly>
+
+<sly data-sly-test="${properties.ctaType == 'text'}">
+	<sly data-sly-use.pathURLText="${'/apps/chipotle/components/content/extension-handler/extension-handler.js' @path=properties.ctaURLText}">
+		<a class="${properties.ctaVariation @context='styleString'}" href="${pathURLText.convertedPath}"  target="${properties.ctaTargetText ? '_blank': '_self'}">
+     		${properties.ctaTitle}
+      	</a>
+	</sly>		
+</sly>
+

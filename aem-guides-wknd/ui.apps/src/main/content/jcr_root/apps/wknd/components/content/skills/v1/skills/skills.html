@@ -1,0 +1,20 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="${component.title}"></div>
+<div class="our-skill-area fix hidden-sm">
+	<div class="test-overly"></div>
+    <div class="skill-bg area-padding-2">
+		<div class="container">
+			<div class="row" data-sly-use.multiItems="aem.community.mf.core.models.Multifield">
+				<div class="skill-text" data-sly-list.skills="${multiItems.products.listChildren}">
+					<div class="col-xs-12 col-sm-3 col-md-3 text-center">
+						<div class="single-skill">
+							<div class="progress-circular">
+							  <div style="display:inline;width:175px;height:200px;"><canvas width="175" height="200"></canvas><input type="text" class="knob" value="0" data-rel="${skills.percentage @ context='attribute'}" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled="" readonly="readonly" style="width: 91px; height: 58px; position: absolute; vertical-align: middle; margin-top: 58px; margin-left: -133px; border: 0px; background: none; font: bold 35px Arial; text-align: center; color: rgb(62, 193, 213); padding: 0px; -webkit-appearance: none;"></div>
+							  <h3 class="progress-h4">${skills.title}</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

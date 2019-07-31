@@ -1,0 +1,72 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="${component.title}"></div>
+    <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><span>e</span>${properties.heading}</h2>
+                </div>
+
+                <p>${properties.subText}</p>
+                <div class="footer-icons" data-sly-use.multiItems="aem.community.mf.core.models.Multifield">
+                  <ul data-sly-list.icons="${multiItems.products.listChildren}">
+                    <li>
+                      <a href="#"><i class="fa ${icons.icon}"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>${properties.midHeading}</h4>
+                <p>
+
+                </p>${properties.midSubText}
+                <div class="footer-contacts">
+                  <p><span>Tel:</span>${properties.numb}</p>
+                  <p><span>Email:</span>${properties.email}</p>
+                  <p><span>Working Hours:</span>${properties.time}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>${properties.lastHeading}</h4>
+                <div class="flicker-img" data-sly-use.multiItems="aem.community.mf.core.models.Multifield">
+				<sly data-sly-list.img="${multiItems.products.listChildren}">
+                  <a href="#"><img src="${img.image}" alt="${img.altText}"></a>
+				  </sly>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
+              </p>
+            </div>
+            <div class="credits">
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>

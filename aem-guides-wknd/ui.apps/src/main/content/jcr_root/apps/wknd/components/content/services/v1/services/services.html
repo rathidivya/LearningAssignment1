@@ -1,0 +1,33 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="${component.title}"></div>
+<div id="services" class="services-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline services-head text-center">
+            <h2>${properties.heading}</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center" data-sly-use.multiItems="aem.community.mf.core.models.Multifield" >
+        <div class="services-contents" data-sly-list.navLink="${multiItems.products.listChildren}">
+          <!-- Start Left services -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+											<i class="fa ${navLink.icon}"></i>
+										</a>
+                  <h4>${navLink.title}</h4>
+                  <p>
+                    ${navLink.description}
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

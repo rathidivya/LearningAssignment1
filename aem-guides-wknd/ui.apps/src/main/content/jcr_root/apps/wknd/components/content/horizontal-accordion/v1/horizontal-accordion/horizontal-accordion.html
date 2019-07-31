@@ -1,0 +1,24 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="${component.title}"></div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="faq-details" data-sly-use.multiItems="aem.community.mf.core.models.Multifield">
+        <div class="panel-group" id="accordion" data-sly-list.faq="${multiItems.products.listChildren}">
+            <!-- Panel Default -->
+            <div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="check-title">
+						<a data-toggle="collapse" class="active collapsed" data-parent="#accordion" href="#${faq.id}" aria-expanded="false">
+							<span class="acc-icons"></span>${faq.question}
+						</a>
+					</h4>
+                </div>
+                <div id="${faq.id}" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+					<div class="panel-body">
+						<p>
+							 ${faq.answer}
+						</p>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-07-15T23:11:33.181+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/wknd/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Image Page"
+        sling:resourceType="wknd/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <header
+                    jcr:created="{Date}2019-07-06T14:15:20.572+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-06T14:38:13.904+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/header/v1/header"
+                    alt="dssadsa"
+                    altValueFromDAM="false"
+                    displayPopupTitle="false"
+                    isDecorative="false"
+                    text="Hi I am Header Component"
+                    titleValueFromDAM="false"/>
+                <portfolio
+                    jcr:created="{Date}2019-07-15T23:10:07.893+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-15T23:11:33.178+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/portfolio/v1/portfolio">
+                    <products jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/sports/wc3.png"
+                            subTitle="CEO"
+                            title="John Michale"/>
+                    </products>
+                </portfolio>
+                <portfolio_1317174760
+                    jcr:created="{Date}2019-07-15T23:10:28.585+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-15T23:10:28.585+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/portfolio/v1/portfolio"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>
